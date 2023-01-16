@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E1A482362975D8F9007D5B7C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A482352975D8F9007D5B7C /* AppDelegate.swift */; };
 		E1A482382975D8F9007D5B7C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A482372975D8F9007D5B7C /* SceneDelegate.swift */; };
-		E1A4823A2975D8F9007D5B7C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A482392975D8F9007D5B7C /* ViewController.swift */; };
 		E1A4823D2975D8F9007D5B7C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A4823B2975D8F9007D5B7C /* Main.storyboard */; };
 		E1A4823F2975D8FC007D5B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1A4823E2975D8FC007D5B7C /* Assets.xcassets */; };
 		E1A482422975D8FC007D5B7C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1A482402975D8FC007D5B7C /* LaunchScreen.storyboard */; };
@@ -18,6 +17,10 @@
 		E1A482592975D8FC007D5B7C /* JahezDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A482582975D8FC007D5B7C /* JahezDemoUITestsLaunchTests.swift */; };
 		E1A4826729760288007D5B7C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4826629760288007D5B7C /* ListViewController.swift */; };
 		E1A4826929760293007D5B7C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4826829760293007D5B7C /* DetailsViewController.swift */; };
+		E1A4827129760419007D5B7C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4827029760419007D5B7C /* NetworkManager.swift */; };
+		E1A482732976050F007D5B7C /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A482722976050F007D5B7C /* Restaurant.swift */; };
+		E1A48275297605ED007D5B7C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A48274297605ED007D5B7C /* NetworkError.swift */; };
+		E1A48278297608F9007D5B7C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A48277297608F9007D5B7C /* UIViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +44,6 @@
 		E1A482322975D8F9007D5B7C /* JahezDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JahezDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A482352975D8F9007D5B7C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1A482372975D8F9007D5B7C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E1A482392975D8F9007D5B7C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E1A4823C2975D8F9007D5B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1A4823E2975D8FC007D5B7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1A482412975D8FC007D5B7C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +55,10 @@
 		E1A482582975D8FC007D5B7C /* JahezDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E1A4826629760288007D5B7C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		E1A4826829760293007D5B7C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		E1A4827029760419007D5B7C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		E1A482722976050F007D5B7C /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		E1A48274297605ED007D5B7C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		E1A48277297608F9007D5B7C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +111,8 @@
 			children = (
 				E1A482352975D8F9007D5B7C /* AppDelegate.swift */,
 				E1A482372975D8F9007D5B7C /* SceneDelegate.swift */,
-				E1A482392975D8F9007D5B7C /* ViewController.swift */,
 				E1A4826529760268007D5B7C /* Controllers */,
+				E1A48276297608E0007D5B7C /* Extensions */,
 				E1A482402975D8FC007D5B7C /* LaunchScreen.storyboard */,
 				E1A4823B2975D8F9007D5B7C /* Main.storyboard */,
 				E1A4826E29760337007D5B7C /* Models */,
@@ -170,6 +176,8 @@
 		E1A4826D29760326007D5B7C /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				E1A48274297605ED007D5B7C /* NetworkError.swift */,
+				E1A4827029760419007D5B7C /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -177,8 +185,17 @@
 		E1A4826E29760337007D5B7C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E1A482722976050F007D5B7C /* Restaurant.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		E1A48276297608E0007D5B7C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E1A48277297608F9007D5B7C /* UIViewController.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,10 +329,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1A4823A2975D8F9007D5B7C /* ViewController.swift in Sources */,
+				E1A4827129760419007D5B7C /* NetworkManager.swift in Sources */,
+				E1A48275297605ED007D5B7C /* NetworkError.swift in Sources */,
 				E1A482362975D8F9007D5B7C /* AppDelegate.swift in Sources */,
+				E1A482732976050F007D5B7C /* Restaurant.swift in Sources */,
 				E1A4826729760288007D5B7C /* ListViewController.swift in Sources */,
 				E1A482382975D8F9007D5B7C /* SceneDelegate.swift in Sources */,
+				E1A48278297608F9007D5B7C /* UIViewController.swift in Sources */,
 				E1A4826929760293007D5B7C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
