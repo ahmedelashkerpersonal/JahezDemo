@@ -16,6 +16,8 @@
 		E1A4824D2975D8FC007D5B7C /* JahezDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4824C2975D8FC007D5B7C /* JahezDemoTests.swift */; };
 		E1A482572975D8FC007D5B7C /* JahezDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A482562975D8FC007D5B7C /* JahezDemoUITests.swift */; };
 		E1A482592975D8FC007D5B7C /* JahezDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A482582975D8FC007D5B7C /* JahezDemoUITestsLaunchTests.swift */; };
+		E1A4826729760288007D5B7C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4826629760288007D5B7C /* ListViewController.swift */; };
+		E1A4826929760293007D5B7C /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4826829760293007D5B7C /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		E1A482522975D8FC007D5B7C /* JahezDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JahezDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A482562975D8FC007D5B7C /* JahezDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezDemoUITests.swift; sourceTree = "<group>"; };
 		E1A482582975D8FC007D5B7C /* JahezDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1A4826629760288007D5B7C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E1A4826829760293007D5B7C /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +106,12 @@
 				E1A482352975D8F9007D5B7C /* AppDelegate.swift */,
 				E1A482372975D8F9007D5B7C /* SceneDelegate.swift */,
 				E1A482392975D8F9007D5B7C /* ViewController.swift */,
-				E1A4823B2975D8F9007D5B7C /* Main.storyboard */,
-				E1A4823E2975D8FC007D5B7C /* Assets.xcassets */,
+				E1A4826529760268007D5B7C /* Controllers */,
 				E1A482402975D8FC007D5B7C /* LaunchScreen.storyboard */,
-				E1A482432975D8FC007D5B7C /* Info.plist */,
+				E1A4823B2975D8F9007D5B7C /* Main.storyboard */,
+				E1A4826E29760337007D5B7C /* Models */,
+				E1A4826D29760326007D5B7C /* Network */,
+				E1A4826C297602CD007D5B7C /* Supporting Files */,
 			);
 			path = JahezDemo;
 			sourceTree = "<group>";
@@ -125,6 +131,54 @@
 				E1A482582975D8FC007D5B7C /* JahezDemoUITestsLaunchTests.swift */,
 			);
 			path = JahezDemoUITests;
+			sourceTree = "<group>";
+		};
+		E1A4826529760268007D5B7C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1A4826A2976029F007D5B7C /* 0. List */,
+				E1A4826B297602A9007D5B7C /* 1. Details */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E1A4826A2976029F007D5B7C /* 0. List */ = {
+			isa = PBXGroup;
+			children = (
+				E1A4826629760288007D5B7C /* ListViewController.swift */,
+			);
+			path = "0. List";
+			sourceTree = "<group>";
+		};
+		E1A4826B297602A9007D5B7C /* 1. Details */ = {
+			isa = PBXGroup;
+			children = (
+				E1A4826829760293007D5B7C /* DetailsViewController.swift */,
+			);
+			path = "1. Details";
+			sourceTree = "<group>";
+		};
+		E1A4826C297602CD007D5B7C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E1A4823E2975D8FC007D5B7C /* Assets.xcassets */,
+				E1A482432975D8FC007D5B7C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E1A4826D29760326007D5B7C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E1A4826E29760337007D5B7C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +314,9 @@
 			files = (
 				E1A4823A2975D8F9007D5B7C /* ViewController.swift in Sources */,
 				E1A482362975D8F9007D5B7C /* AppDelegate.swift in Sources */,
+				E1A4826729760288007D5B7C /* ListViewController.swift in Sources */,
 				E1A482382975D8F9007D5B7C /* SceneDelegate.swift in Sources */,
+				E1A4826929760293007D5B7C /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +494,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JahezDemo/Info.plist;
+				INFOPLIST_FILE = "JahezDemo/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -465,7 +521,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JahezDemo/Info.plist;
+				INFOPLIST_FILE = "JahezDemo/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
