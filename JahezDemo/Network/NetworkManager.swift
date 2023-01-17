@@ -5,7 +5,7 @@
 //  Created by Ahmed Elashker on 17/01/2023.
 //
 
-import Foundation
+import UIKit
 
 struct NetworkManager {
     
@@ -34,4 +34,23 @@ struct NetworkManager {
         }
         
     }
+    
+    func loadImage(urlString: String) async throws -> UIImage? {
+        
+        guard let url = URL(string: urlString) else {
+            return nil
+        }
+        
+        let (data, response) = try await URLSession.shared.data(from: url)
+        
+        guard let httpResponse = response as? HTTPURLResponse,
+              httpResponse.statusCode == 200 else {
+            throw NetworkError.invalidServerResponse
+        }
+        
+        let image = UIImage(data: data)
+        return image
+        
+    }
+    
 }

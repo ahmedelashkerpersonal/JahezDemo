@@ -10,7 +10,7 @@ import UIKit
 extension UIViewController {
     
     func showErrorAlert(error: Error,
-                                retryBlock: ((UIAlertAction) -> Void)? = nil) {
+                        retryBlock: ((UIAlertAction) -> Void)? = nil) {
         
         let networkError = error as? NetworkError
         self.showAlert(title: networkError?.title,
