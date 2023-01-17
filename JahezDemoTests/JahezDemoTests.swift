@@ -33,4 +33,22 @@ final class JahezDemoTests: XCTestCase {
         }
     }
 
+    func testRestaurantsResponse() async throws {
+        
+        let restaurants = try await NetworkManager().loadRestaurants()
+        XCTAssert(restaurants.isEmpty == false)
+    }
+    
+    func testKudoImageExists() async throws {
+        
+        let kudoImage = try await NetworkManager().loadImage(urlString: "https://jahez-other-oniiphi8.s3.eu-central-1.amazonaws.com/1.jpg")
+        XCTAssertNotNil(kudoImage)
+    }
+    
+    func testOffers() async throws {
+        
+        let restaurants = try await NetworkManager().loadRestaurants()
+        let restaurantsWithOffers = restaurants.filter({$0.hasOffer == true})
+        XCTAssertGreaterThan(restaurantsWithOffers.count, 0)
+    }
 }

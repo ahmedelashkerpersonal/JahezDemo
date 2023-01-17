@@ -45,7 +45,7 @@ struct NetworkManager {
         
         guard let httpResponse = response as? HTTPURLResponse,
               httpResponse.statusCode == 200 else {
-            throw NetworkError.invalidServerResponse
+            return nil
         }
         
         let image = UIImage(data: data)

@@ -9,6 +9,8 @@ import UIKit
 
 final class JahezCollectionView: UICollectionView {
     
+    static let cellIdentifier = "JahezCell"
+    
     //MARK: - Collection View Setup
     enum CollectionViewSection: CaseIterable {
         case main

@@ -31,7 +31,7 @@ final class ListViewController: UIViewController {
         let layout = UICollectionViewCompositionalLayout.list(using: configuration)
         
         self.collectionView = JahezCollectionView(frame: self.view.frame, collectionViewLayout: layout)
-        self.collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "JahezCell")
+        self.collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: JahezCollectionView.cellIdentifier)
         self.collectionView?.delegate = self
         
         if let collection = self.collectionView {
