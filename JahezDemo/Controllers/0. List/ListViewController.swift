@@ -81,6 +81,9 @@ extension ListViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         collectionView.deselectItem(at: indexPath, animated: true)
-        //TODO: - do the details
+        
+        let restaurant = self.dataSource[indexPath.row]
+        let detailsVC = DetailsViewController(restaurant: restaurant)
+        self.navigationController?.pushViewController(detailsVC, animated: true)
     }
 }
