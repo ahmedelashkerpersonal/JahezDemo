@@ -100,7 +100,8 @@ final class DetailsViewController: UIViewController {
         
         NSLayoutConstraint.activate([
             self.imageView.centerXAnchor.constraint(equalTo: self.imageContainer.centerXAnchor),
-            self.imageView.centerYAnchor.constraint(equalTo: self.imageContainer.centerYAnchor)
+            self.imageView.centerYAnchor.constraint(equalTo: self.imageContainer.centerYAnchor),
+            self.imageView.widthAnchor.constraint(equalTo: self.imageContainer.widthAnchor, multiplier: 0.5)
         ])
     }
     
