@@ -22,6 +22,7 @@
 		E1A48275297605ED007D5B7C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A48274297605ED007D5B7C /* NetworkError.swift */; };
 		E1A48278297608F9007D5B7C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A48277297608F9007D5B7C /* UIViewController.swift */; };
 		E1A4827A297731DD007D5B7C /* JahezCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A48279297731DD007D5B7C /* JahezCollectionView.swift */; };
+		E1A48280297763A6007D5B7C /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1A4827F297763A6007D5B7C /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		E1A48274297605ED007D5B7C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		E1A48277297608F9007D5B7C /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		E1A48279297731DD007D5B7C /* JahezCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JahezCollectionView.swift; sourceTree = "<group>"; };
+		E1A4827F297763A6007D5B7C /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +198,7 @@
 		E1A48276297608E0007D5B7C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				E1A4827F297763A6007D5B7C /* Double.swift */,
 				E1A48277297608F9007D5B7C /* UIViewController.swift */,
 			);
 			path = Extensions;
@@ -340,6 +343,7 @@
 				E1A482382975D8F9007D5B7C /* SceneDelegate.swift in Sources */,
 				E1A48278297608F9007D5B7C /* UIViewController.swift in Sources */,
 				E1A4826929760293007D5B7C /* DetailsViewController.swift in Sources */,
+				E1A48280297763A6007D5B7C /* Double.swift in Sources */,
 				E1A4827A297731DD007D5B7C /* JahezCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
